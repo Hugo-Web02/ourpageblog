@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar Sesión - GeekShop</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Vincular CSS -->
+</head>
+<body class="login-page">
+
+
+<!/* -------------------------------------------------------------
+  Contenedor de inicio de sesión
+------------------------------------------------------------- */>
+
+<div class="login-container">
+  <div class="login-box">
+    <h1>GeekShop</h1>
+    <form action="tu-servidor-o-api.html" method="post">
+      <label for="username">Nombre de usuario o correo electrónico</label>
+      <input type="text" id="username" name="username" placeholder="Introduce tu usuario o correo" required>
+
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" name="password" placeholder="Introduce tu contraseña" required>
+
+      <button type="submit">Iniciar Sesión</button>
+
+      <div class="login-options">
+        <a href="#">¿Olvidaste tu contraseña?</a>
+        <p>¿Eres nuevo? <a href="registro.html">Crea una cuenta</a></p>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!/* -------------------------------------------------------------
+  Pie de página
+------------------------------------------------------------- */>
+
+<footer>
+  <p>&copy; 2024 GeekShop. Todos los derechos reservados.</p>
+  <ul>
+    <li><a href="#">Términos</a></li>
+    <li><a href="#">Privacidad</a></li>
+    <li><a href="#">Soporte</a></li>
+    <li><a href="contactanos.html">Contáctanos</a></li>
+    <li><a href="acerca_de.html">Acerca de</a></li>
+  </ul>
+</footer>
+
+<style>
+  /* Estilos básicos para la página de inicio de sesión */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .login-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    margin-bottom: 5px;
+    color: #555;
+  }
+
+  input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  button:hover {
+    background-color: #218838;
+  }
+
+  .login-options {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .login-options a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .login-options a:hover {
+    text-decoration: underline;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+  }
+
+  footer ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  footer ul li {
+    display: inline;
+    margin-right: 15px;
+  }
+
+  footer ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  footer ul li a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+</body>
+</html>

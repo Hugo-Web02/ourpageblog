@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contactanos - GeekShop</title>
+  <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+<header>
+  <h1>Contáctanos</h1>
+  <nav>
+    <ul>
+      <li><a href="GeekShop.html">Inicio</a></li>
+      <li><a href="iniciar-sesion.html">Iniciar Sesión</a></li>
+      <li><a href="registro.html">Registro</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="contact-form">
+  <h2>Envíanos un mensaje</h2>
+  <form action="enviar_formulario.php" method="POST">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" required>
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<section id="whatsapp">
+  <h2>Contáctanos vía WhatsApp</h2>
+  <a href="https://wa.me/tu-numero-telefono" target="_blank">
+    <img src="img/WhatsApp.png" alt="WhatsApp">
+  </a>
+</section>
+
+<section id="ubicacion">
+  <h2>Ubicación</h2>
+  <p>Dirección: Calle GeekShop, Ciudad Geek, 12345</p>
+  <p>Teléfonos: 123-456-7890</p>
+</section>
+
+<footer>
+  <p>&copy; 2024 GeekShop. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>
+

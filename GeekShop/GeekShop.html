@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeekShop</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+
+<!/* -------------------------------------------------------------
+  Barra de navegacion
+------------------------------------------------------------- */>
+
+<header>
+  <div class="logo">
+    <h1>GeekShop</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="index.html">INICIO</a></li>
+      <li>
+        <a href="#">TIENDA</a>
+        <ul class="submenu">
+          <li><a href="hombre.html">HOMBRE</a></li>
+          <li><a href="mujer.html">MUJER</a></li>
+          <li><a href="Ninos.html">NIÑO</a></li>
+          <li><a href="sudaderas.html">SUDADERAS</a></li>
+          <li><a href="tenis.html">TENIS</a></li>
+          <li><a href="gorras.html">GORRAS</a></li>
+        </ul>
+      </li>
+      <li><a href="#">PELICULAS</a></li>
+      <li><a href="#">ANIME</a></li>
+      <li><a href="#">GAMES</a></li>
+      <li><a href="iniciar-sesion.html">
+        <img src="img/Iniciar sesion/iniciar-sesion.png" alt="Icono de inicio de sesión" style="width: 20px; height: 20px; vertical-align: middle;"> 
+        Iniciar Sesión
+      </a></li>
+      <li><button id="abrir-carrito" class="btn-carrito">Carrito (0)</button></li> <!-- Botón del carrito -->
+    </ul>
+  </nav>
+
+<!/* -------------------------------------------------------------
+  Carrito de Compra
+------------------------------------------------------------- */>
+
+  <!-- Carrito de Compras -->
+  <div class="carrito-contenido" id="carrito-contenido">
+    <button id="cerrar-carrito">X</button>
+    <h3>Carrito</h3>
+    <div id="carrito-productos"></div>
+    <p id="subtotal">Subtotal: $0.00</p>
+    <button id="ver-carrito" class="btn-ver-carrito">Ver el Carrito</button>
+  </div>
+</header>
+
+<!/* -------------------------------------------------------------
+  Boton que Direcciona al apartado de Ofertas
+------------------------------------------------------------- */>
+
+<!-- Sección principal con llamada a la acción -->
+<section class="hero">
+  <div class="hero-content">
+    <h4>Bienvenidos a GeekShop</h4>
+    <button onclick="document.getElementById('ofertas-especiales').scrollIntoView({ behavior: 'smooth' });">
+      Ver Ofertas Especiales
+    </button>
+  </div>
+</section>
+
+
+<!/* -------------------------------------------------------------
+  Carrusel
+------------------------------------------------------------- */
+
+<!-- Sección del carrusel usando Swiper.js -->
+<section class="carrusel">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="img/Prueba1.jpg" alt="Imagen 1"></div>
+      <div class="swiper-slide"><img src="img/Prueba2.jpg" alt="Imagen 2"></div>
+      <div class="swiper-slide"><img src="img/Prueba3.jpg" alt="Imagen 3"></div>
+      <div class="swiper-slide"><img src="img/Prueba4.jpg" alt="Imagen 4"></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</section>
+
+<!/* -------------------------------------------------------------
+  Productos Destacados
+------------------------------------------------------------- */>
+
+<!-- Sección de productos destacados -->
+<section class="productos-destacados">
+  <div class="Productos-destacados">
+    <h4>GeekShop</h4>
+    <h5>PRODUCTOS DESTACADOS</h5>
+  </div>
+  <div class="productos">
+
+    <div class="producto">
+      <img src="img/PD1.jpg" alt="Camiseta Geek 1">
+      <h3>Stich Experiment 626</h3>
+      <p class="precio">$269.40</p>
+      <button class="agregar-carrito" data-nombre="Stich Experiment 626" data-precio="269.40">Agregar al Carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="img/PD2.jpg" alt="Camiseta Geek 2">
+      <h3>Ikki Fenix</h3>
+      <p class="precio">$269.40</p>
+      <button class="agregar-carrito" data-nombre="Ikki Fenix" data-precio="269.40">Agregar al Carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="img/PD3.jpg" alt="Camiseta Geek 3">
+      <h3>Pelicula De Horror</h3>
+      <p class="precio">$269.40</p>
+      <button class="agregar-carrito" data-nombre="Pelicula De Horror" data-precio="269.40">Agregar al Carrito</button>
+    </div>
+  </div>
+</section>
+
+<!/* -------------------------------------------------------------
+  Productos en Oferta
+------------------------------------------------------------- */>
+
+
+<!-- Sección Ofertas Especiales -->
+<section id="ofertas-especiales" class="ofertas-especiales">
+  <h2>Ofertas Especiales</h2>
+  <div class="productos">
+    <div class="producto">
+      <img src="img/Ofertas/Oferta1.jpg" alt="Producto 1">
+      <h3>NOSFERATU</h3>
+      <p class="precio">$169.40</p>
+      <button class="agregar-carrito" data-nombre="NOSFERATU" data-precio="169.40">Agregar al Carrito</button>
+    </div>
+    <div class="producto">
+      <img src="img/Ofertas/Oferta2.jpg" alt="Producto 2">
+      <h3>KILL BILL</h3>
+      <p class="precio">$169.40</p>
+      <button class="agregar-carrito" data-nombre="KILL BILL" data-precio="169.40">Agregar al Carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="img/Ofertas/Oferta3.jpg" alt="Producto 3">
+      <h3>BIG BROTHER</h3>
+      <p class="precio">$169.40</p>
+      <button class="agregar-carrito" data-nombre="BIG BROTHER" data-precio="169.40">Agregar al Carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="img/Ofertas/Oferta4.jpg" alt="Producto 4">
+      <h3>EL LABERINTO DEL FAUNO</h3>
+      <p class="precio">$169.40</p>
+      <button class="agregar-carrito" data-nombre="EL LABERINTO DEL FAUNO" data-precio="169.40">Agregar al Carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="img/Ofertas/Oferta5.jpg" alt="Producto 5">
+      <h3>Stich Ramen Dama</h3>
+      <p class="precio">$169.40</p>
+      <button class="agregar-carrito" data-nombre="Stich Ramen Dama" data-precio="169.40">Agregar al Carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="img/Ofertas/Oferta6.jpg" alt="Producto 6">
+      <h3>Sailor Moon Viñeta Dama</h3>
+      <p class="precio">$169.40</p>
+      <button class="agregar-carrito" data-nombre="Sailor Moon Viñeta Dama" data-precio="169.40">Agregar al Carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="img/Ofertas/Oferta7.jpg" alt="Producto 7">
+      <h3>Coraline Dama</h3>
+      <p class="precio">$169.40</p>
+      <button class="agregar-carrito" data-nombre="Coraline Dama" data-precio="169.40">Agregar al Carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="img/Ofertas/Oferta8.jpg" alt="Producto 8">
+      <h3>ARALE DAMA</h3>
+      <p class="precio">$169.40</p>
+      <button class="agregar-carrito" data-nombre="ARALE DAMA" data-precio="169.40">Agregar al Carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="img/Ofertas/Oferta9.jpg" alt="Producto 9">
+      <h3>Impostor Gorra</h3>
+      <p class="precio">$289.40</p>
+      <button class="agregar-carrito" data-nombre="Impostor Gorra" data-precio="289.40">Agregar al Carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="img/Ofertas/Oferta10.jpg" alt="Producto 10">
+      <h3>SUDADERA NEVER MORE</h3>
+      <p class="precio">$410.40</p>
+      <button class="agregar-carrito" data-nombre="SUDADERA NEVER MORE" data-precio="410.40">Agregar al Carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="img/Ofertas/Oferta11.jpg" alt="Producto 11">
+      <h3>MORRISSEY CARBON</h3>
+      <p class="precio">$368.40</p>
+      <button class="agregar-carrito" data-nombre="MORRISSEY CARBON" data-precio="368.40">Agregar al Carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="img/Ofertas/Oferta12.jpg" alt="Producto 12">
+      <h3>BAD BOYS</h3>
+      <p class="precio">$169.40</p>
+      <button class="agregar-carrito" data-nombre="BAD BOYS" data-precio="169.40">Agregar al Carrito</button>
+    </div>
+
+  </div>
+</section>
+
+<!/* -------------------------------------------------------------
+  Pie de pagina
+------------------------------------------------------------- */>
+
+<!-- Pie de página -->
+<footer>
+  <p>&copy; 2024 GeekShop. Todos los derechos reservados.</p>
+</footer>
+
+<!/* -------------------------------------------------------------
+  Swiper JS
+------------------------------------------------------------- */>
+
+<!-- Incluir Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+/* Fondo general y ajuste de fuente */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e6e0f8; /* Morado claro */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  text-align: center;
+}
+
+/* Estilo del encabezado */
+header {
+  background-color: #4b0082; /* Morado oscuro */
+  padding: 20px 0;
+}
+
+header h1 {
+  color: white;
+  margin: 0;
+}
+
+/* Estilo de enlaces del menú */
+nav {
+  margin-top: 20px; /* Ajusta esta cantidad según sea necesario */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Estilos para el formulario de contacto */
+#contact-form {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact-form h2 {
+  color: #4b0082;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+#contact-form input[type="text"]:focus, #contact-form input[type="email"]:focus, #contact-form textarea:focus {
+  border-color: #4b0082;
+  outline: none;
+}
+
+/* Botón de enviar */
+#contact-form button {
+  background-color: #4b0082;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contact-form button:hover {
+  background-color: #6a0dad;
+}
+
+/* Estilo de la sección de WhatsApp */
+#whatsapp {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+#whatsapp img {
+  width: 100px;
+  height: auto;
+}
+
+/* Estilo de la sección de ubicación */
+#ubicacion {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+#ubicacion p {
+  margin: 5px 0;
+}
+
+/* Estilo del pie de página */
+footer {
+  margin-top: 20px;
+  color: white;
+  background-color: #4b0082;
+  padding: 10px 0;
+  border-top: 2px solid #4b0082;
+}
